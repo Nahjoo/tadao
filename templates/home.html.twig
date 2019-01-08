@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TADAO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+   
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nom</th><th>Villes</th>
+        </tr>
+        {% for route in routes %}
+        <tr>
+            <td>{{ route['route_id'] }}</td>
+            <td>{{ route['route_long_name'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+    <!-- {% for route_id in routes_id %}
+    <div>{{ route_id }}</div>
+    {% endfor %}
+    {% for route_long_name in routes_long_name %}
+    <div>{{ route_long_name }}</div>
+    {% endfor %} -->
+</body>
+</html>
